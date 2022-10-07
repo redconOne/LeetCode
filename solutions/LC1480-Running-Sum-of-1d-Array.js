@@ -7,3 +7,6 @@ function runningSum(nums) {
   }
   return result;
 }
+
+// Using a method with an accumulator for tracking
+// add current index of num to accumulator, and then push acc value into result array to be returned
