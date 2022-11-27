@@ -1,5 +1,5 @@
 const romanToInt = (str: string): number => {
-  let result: number = 0;
+  let result = 0;
   const values: { [key: string]: number } = {
     CM: 900,
     M: 1000,
@@ -16,7 +16,7 @@ const romanToInt = (str: string): number => {
     I: 1,
   };
 
-  for (let key in values) {
+  for (const key in values) {
     while (str.includes(key)) {
       result += values[key];
       str = str.replace(key, '');
