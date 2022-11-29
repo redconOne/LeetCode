@@ -3,7 +3,7 @@ const searchInsert = (nums: number[], target: number): number => {
       max: number = nums.length - 1;
   
     while (min <=    max) {
-      let mid: number = Math.floor((min + max) / 2);
+      const mid: number = Math.floor((min + max) / 2);
       if (nums[mid] === target) return mid;
       if (nums[mid] < target) min = mid + 1;
       else max = mid - 1;
